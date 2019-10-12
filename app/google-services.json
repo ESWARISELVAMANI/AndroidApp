@@ -1,0 +1,591 @@
+{
+  "project_info": {
+    "project_number": "304651691923",
+    "firebase_url": "https://news-33144.firebaseio.com",
+    "project_id": "news-33144",
+    "storage_bucket": "news-33144.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:8741c7c5045591a9",
+        "android_client_info": {
+          "package_name": "all.bangla.newspaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:69dbf627c3bb8c02",
+        "android_client_info": {
+          "package_name": "all.hindi.onlineshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:d20c208a6ddfc9fc",
+        "android_client_info": {
+          "package_name": "app.all.bangla.magazines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:383545de5614ad08",
+        "android_client_info": {
+          "package_name": "app.news.kannada.newspaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:6108a75243fe12ba",
+        "android_client_info": {
+          "package_name": "app.newspaper.bengali.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:1e4d85be52101370",
+        "android_client_info": {
+          "package_name": "app.samachar.hindi.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:898fff58c1971a6b",
+        "android_client_info": {
+          "package_name": "app.samachar.hindinews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:f867bae65b5d1496",
+        "android_client_info": {
+          "package_name": "com.AllTamilNews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:aa648c7166136673",
+        "android_client_info": {
+          "package_name": "com.news.kannada.newspaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:e8ae4f3ebbc06fd5",
+        "android_client_info": {
+          "package_name": "india.english.news.paper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:d51b7db4ed98fa1b",
+        "android_client_info": {
+          "package_name": "india.news.paper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-ldkudri8h5odjelleq05evalc7i4fflm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "india.news.paper",
+            "certificate_hash": "c98beeab454c13a135c5a77ffcbd01b7fc94d22c"
+          }
+        },
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "304651691923-vlmnpnf3oh25fv1efggussl13bo187pv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "news.TamilNewsPaper"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:9cee7008a58f4eda",
+        "android_client_info": {
+          "package_name": "malayalam.news.paper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1814894186196899~1504880962"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:ce8501cc1001fbf5",
+        "android_client_info": {
+          "package_name": "marathi.news.paper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1814894186196899~2916396563"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:8a67504cb8f7b089",
+        "android_client_info": {
+          "package_name": "news.TamilNewsPaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:bd25a17104e33e85",
+        "android_client_info": {
+          "package_name": "punjabi.news.newspaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1814894186196899~1225679368"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:0f59cd6189f408c0",
+        "android_client_info": {
+          "package_name": "telugu.news.paper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-pmdiv4o8ia42rolv2j0bdmi487rqim6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "telugu.news.paper",
+            "certificate_hash": "c98beeab454c13a135c5a77ffcbd01b7fc94d22c"
+          }
+        },
+        {
+          "client_id": "304651691923-13aj7q50r5rckloqj7amguf1v1e1i68j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "telugu.news.paper",
+            "certificate_hash": "8478f8648c5ff4face5c84591cdfa4adc7c77a1b"
+          }
+        },
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "304651691923-vlmnpnf3oh25fv1efggussl13bo187pv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "news.TamilNewsPaper"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1814894186196899~7322711368"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304651691923:android:5029f06e8950844d",
+        "android_client_info": {
+          "package_name": "up.news.newspaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304651691923-rh1c2m6l10t5di2uf7kkvi56sqmsrfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKfMtzX7H3zbfdzSwuwe-DuvXuSrLsmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-1814894186196899~3260815767"
+    }
+  ],
+  "configuration_version": "1"
+}

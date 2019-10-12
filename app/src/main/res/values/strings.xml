@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Tamil News Newspaper</string>
+    <string name="app_description">Tamil News App to read latest news from all Tamil Newspaper </string>
+    <string name="action_settings">Settings</string>
+    <string name="rating_message">Huge Thanks for using our App. It will be pleasure if you help us by rating 5 Start in Play Store. It won’t take more than a minute. Thanks for your support!</string>
+    <string name="rating_title">Huge Thanks!!</string>
+    <string name="rating_yes">Nice, I will Rate 5 Stars</string>
+    <string name="rating_no">Sorry, I cant help</string>
+    <string name="rating_later">I will rate later</string>
+    <string name="favourate_menu_text">பிடித்த பகுதிகள்</string>
+
+    <string name="admob_app_id">-ca-app-pub-9402469848738699~1325540563</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1814894186196899/3086791760</string>
+    <string name="admob_startup_popup_id">ca-app-pub-1814894186196899/4563524962</string>
+    <string name="admob_popup_id">ca-app-pub-1814894186196899/4563524962</string>
+
+
+    <!-- Test Ads -->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_startup_popup_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_popup_id">ca-app-pub-3940256099942544/1033173712</string>-->
+
+
+    <string name="notication_topic">swipeTNTamilNewsAndroid</string>
+    <string name="title_activity_tabs">Tamil News</string>
+    <string name="title_activity_detail">Tamil News</string>
+    <!--<string name="fb_popup_id">384223532079868_384224455413109</string>
+    <string name="fb_banner_id">&#45;&#45;275733493150947_275734203150876</string>
+    <string name="fb_big_banner_id">&#45;&#45;411003245996054_411005029329209</string>-->
+
+    <string name="fb_popup_id">384223532079868_505080193327534</string>
+    <string name="fb_popup_id_category">384223532079868_511135429388677</string>
+
+
+</resources>

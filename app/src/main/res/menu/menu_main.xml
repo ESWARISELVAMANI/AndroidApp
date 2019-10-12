@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+        <item
+            android:id="@+id/Rate"
+            app:showAsAction="always|collapseActionView"
+            android:title="Please Rate us"
+            android:textSize="2sp"
+            />
+
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        app:showAsAction="always"
+        android:textSize="2sp"/>
+
+    <item
+        android:id="@+id/rateus2"
+        android:title="Please Rate Us"
+        android:capitalize="none"
+        android:onClick="rateus"
+        android:icon="@drawable/rate"
+        />
+
+    <item
+        android:id="@+id/share2"
+        android:icon="@drawable/share"
+        android:title="Share this App with your frieds"
+        />
+
+    <item
+        android:id="@+id/policy"
+        android:title="Privacy Policy"
+        />
+
+
+
+</menu>

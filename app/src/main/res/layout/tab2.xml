@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:id="@+id/punjabi_news_layout">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/best_punjabi_news_linearlayout"
+        android:layout_weight="1.3">
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:grid="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:id="@+id/best_punjabi_news_newspaper"
+            tools:context="news.TamilNewsPaper.TopNewspaperWebViewActivity"
+            android:columnCount="4"
+            android:rowCount="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+        </GridLayout>
+        <TextView
+            android:id="@+id/favourate_punjabi_newspaper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/favourate_menu_text"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:layout_centerVertical="true"
+            android:textSize="11dp"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/seperator"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/up_news_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:id="@+id/all_punjabi_news_Newspapers_Scroll">
+
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:grid="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:id="@+id/up_news_newspaper"
+                tools:context="news.TamilNewsPaper.TopNewspaperWebViewActivity"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+
+                >
+
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tamil_jathagam_app"
+                    android:background="@drawable/tamil_jathagam_app"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Tamil Jathagam Free"
+                    android:tag="http://m.epanchang.com/jathagam-in-tamil, false,tamil_jathagam_app"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+
+
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/daily_rasipalan"
+                    android:background="@drawable/daily_rasipalan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Daily Rasipalan Tamil"
+                    android:tag="http://astrology.dinakaran.com/rasi-index.asp, true,daily_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weekly_rasipalan"
+                    android:background="@drawable/weekly_rasipalan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Weekly Rasipalan Tamil"
+                    android:tag="http://tamil.oneindia.com/astrology/weekly/weekly-forecast.html, false,weekly_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monthly_rasipalan"
+                    android:background="@drawable/monthly_rasipalan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Monthly Rasipalan Tamil"
+                    android:tag="http://astrology.dinakaran.com/angilamatharasipalan.asp,true,monthly_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/daily_nachathira_palangal"
+                    android:background="@drawable/daily_nachathira_palangal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Daily Nachathira Palangal"
+                    android:tag="http://tamil.oneindia.com/astrology/nakshatra/today-nakshatra-palan-211113.html, false,daily_nachathira_palangal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_year_rasipalan"
+                    android:background="@drawable/new_year_rasipalan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="2018 Newyear Rasipalan"
+                    android:tag="https://www.vikatan.com/horoscope/new-year-rasipalan/, false,new_year_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tamil_puthandu_rasipalan"
+                    android:background="@drawable/tamil_puthandu_rasipalan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Tamil Puthandu Rasipalan"
+                    android:tag="https://tamil.oneindia.com/astrology/news/hevilambi-tamil-new-year-rasi-palangal-mesham-meenam-279755.html, false,tamil_puthandu_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pirandha_naal_palan"
+                    android:background="@drawable/pirandha_naal_palan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Pirandha Naal Palan"
+                    android:tag="http://astrology.dinakaran.com/piranthanalpalan.asp, true,pirandha_naal_palan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rasi_calculator"
+                    android:background="@drawable/rasi_calculator"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Rasi Nachathiram Calculator"
+                    android:tag="https://srirangaminfo.com/tamil-rasi-calculator.php, false,rasi_calculator"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numerology_tamil"
+                    android:background="@drawable/numerology_tamil"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Tamil Numerology"
+                    android:tag="http://www.tamildi.com/astro/numerology/, true,numerology_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vaara_nachathira_palan"
+                    android:background="@drawable/vaara_nachathira_palan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Vaara Nachathira Palangal"
+                    android:tag="https://www.dailythanthi.com/Astrology/StarBenefits, true,vaara_nachathira_palan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guru_peyarchi"
+                    android:background="@drawable/guru_peyarchi"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Guru Peyarchi Palangal"
+                    android:tag="https://www.google.co.in/amp/s/tamil.oneindia.com/amphtml/astrology/news/gurupeyarchi-2017-from-mesham-meenam-30-08-2017-294411.html, false,guru_peyarchi"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guru_peyarchi_palangal_video"
+                    android:background="@drawable/guru_peyarchi_palangal_video"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Guru Peyarchi Palangal"
+                    android:tag="https://m.youtube.com/playlist?list=PLXVINLdFExEElgujUV86Duh1QgPgPGI4s, false,guru_peyarchi_palangal_video"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sani_peyarchi"
+                    android:background="@drawable/sani_peyarchi"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Sani Peyarchi"
+                    android:tag="https://www.google.co.in/amp/s/tamil.oneindia.com/amphtml/astrology/news/gurupeyarchi-2017-from-mesham-meenam-30-08-2017-294411.html, false,sani_peyarchi"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sani_peyarchi_palangal_video"
+                    android:background="@drawable/sani_peyarchi_palangal_video"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Sani Peyarchi Palangal"
+                    android:tag="https://m.youtube.com/playlist?list=PLpwBKS28wz8PGUQIOoyIhaYNL0GFox00T, false,sani_peyarchi_palangal_video"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ragu_kethu_tamil"
+                    android:background="@drawable/ragu_kethu_tamil"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Ragu Kethu Tamil"
+                    android:tag="https://www.vikatan.com/sakthivikatan/2017-jul-04/astrology/132062-rahu-kethu-peyarchi-palangal.html, false,ragu_kethu_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kai_regai_josiyam"
+                    android:background="@drawable/kai_regai_josiyam"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Kai Regai Josiyam Tamil"
+                    android:tag="http://www.tamilsurangam.in/astrology/palmistry/palm_lines/index.html#.Wqds6R1ubIV, false,kai_regai_josiyam"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vasthusasthram_tamil"
+                    android:background="@drawable/vasthusasthram_tamil"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Vasthu Sasthram Tamil"
+                    android:tag="http://tamil.webdunia.com/vaasthu-house-features, false,vasthusasthram_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kan_drishti_pariharam"
+                    android:background="@drawable/kan_drishti_pariharam"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Kan Drishti Parigaram"
+                    android:tag="https://www.youtube.com/watch?v=gSpf5V6ZiGo, false,kan_drishti_pariharam"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/baby_name_jathagam"
+                    android:background="@drawable/baby_name_jathagam"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Kulandhai Peyargal - Baby Name by Nakshathra"
+                    android:tag="https://www.dailytamilcalendar.in/2017/04/baby-names-baby-names-natchatiram.html, false,baby_name_jathagam"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kili_josiyam"
+                    android:background="@drawable/kili_josiyam"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Kili Josiyam"
+                    android:tag="http://astrology.tamilcube.com/tamil-astrology/parrot.aspx, false,kili_josiyam"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kanavu_palangal"
+                    android:background="@drawable/kanavu_palangal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Dream Meaning Tamil - Kanavu Palangal"
+                    android:tag="https://www.dailytamilcalendar.in/2016/11/kanavu-palangal.html, false,kanavu_palangal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navagraham_kovilgal"
+                    android:background="@drawable/navagraham_kovilgal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Navagraha Parigarangal"
+                    android:tag="http://www.tamilsurangam.in/astrology/general_astrology/mantras/planets_remedy_mantras/index.html#.WqdsHh1ubIV, false,navagraham_kovilgal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bakthi_padalgal"
+                    android:background="@drawable/bakthi_padalgal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Bakthi Padalgal"
+                    android:tag="https://m.youtube.com/channel/UCJazMNzlyTD7Fjauk5dud1g, false,bakthi_padalgal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kovilgal"
+                    android:background="@drawable/kovilgal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Kovilgal"
+                    android:tag="http://temple.dinamalar.com/, false,kovilgal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/manayadi_saasthiram"
+                    android:background="@drawable/manayadi_saasthiram"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Manayadi Sasthiram"
+                    android:tag="https://www.dailytamilcalendar.in/2016/11/manaiyadi-shastram.html, false,manayadi_saasthiram"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/natchathiram_god"
+                    android:background="@drawable/natchathiram_god"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Natchathira Kadavul"
+                    android:tag="https://tamil.oneindia.com/astrology/news/2012/nakshatra-gods-27-aid0176.html, false,natchathiram_god"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/palli_villum_palan"
+                    android:background="@drawable/palli_villum_palan"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Palli Villum Palan"
+                    android:tag="https://www.dailytamilcalendar.in/2016/11/palli-vilum-palan.html, false,palli_villum_palan"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tamil_manthirangal"
+                    android:background="@drawable/tamil_manthirangal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Tamil God Manthiram"
+                    android:tag="https://dheivegam.com/slogam/, false,tamil_manthirangal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yoga_tamil"
+                    android:background="@drawable/yoga_tamil"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Yoga Tamil"
+                    android:tag="http://tamil.webdunia.com/yoga-article-and-postures, false,yoga_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/macha_palangal"
+                    android:background="@drawable/macha_palangal"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Macha Palangal"
+                    android:tag="https://www.dailytamilcalendar.in/2016/11/macha-sastram.html, false,macha_palangal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lucky_stone_tamil"
+                    android:background="@drawable/lucky_stone_tamil"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="openTopNewspaper"
+                    android:hint="Lucky Stone Tamil"
+                    android:tag="https://www.dailytamilcalendar.in/2017/05/lucky-stone-rasi-lucky-stones-gems.html, false,lucky_stone_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+
+                    />
+
+
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:grid="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:id="@+id/fbAd"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp">
+                <LinearLayout
+                    android:id="@+id/big_banner_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" />
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:grid="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:id="@+id/rateusgridhindi"
+                tools:context="news.TamilNewsPaper.TopNewspaperWebViewActivity"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rateushindi"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:onClick="rateus"
+                    android:hint="PLEASE RATE US"
+                    android:text="PLEASE RATE US"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="0dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textColorHighlight="@android:color/primary_text_dark"
+                    android:layout_centerVertical="true"
+                    android:textSize="23dp"
+                    android:gravity="center"/>
+
+                />
+
+            </GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentTop="false"
+        android:layout_above="@id/up_news_scroll"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        >
+    </com.google.android.gms.ads.AdView>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/appExit"
+        android:background="@drawable/splash"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        android:visibility="gone"/>
+</LinearLayout>

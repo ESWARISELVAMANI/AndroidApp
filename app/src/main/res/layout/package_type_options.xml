@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tamil_jathagam_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="Congrats, Your are on BEST place to get your life time Astrological prediction "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/packageFeesSelectionRadio">
+                <RadioButton
+                    android:text="உங்கள் ஒரு கேள்விக்கு தீர்வு கிடைக்கும் - Rs200 Only"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/one"
+                    android:onClick="feesSelection"/>
+
+                <RadioButton
+                    android:text="உங்கள் துல்லியமான எதிர்கால கணிப்பு - Rs400 Only"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/future"
+                    android:layout_marginTop="10dp"
+                    android:onClick="feesSelection"/>
+
+                <RadioButton
+                    android:text="உங்கள் துல்லியமான எதிர்கால கணிப்பு மற்றும் ஒரு கேள்விக்கு தீர்வு - Rs600 Only"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/futureOne"
+                    android:layout_marginTop="10dp"
+                    android:onClick="feesSelection"/>
+
+                <RadioButton
+                    android:text="உங்கள் துல்லியமான எதிர்கால கணிப்பு மற்றும் இரண்டு கேள்விக்கு தீர்வு - Rs800 Only"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/futureTwo"
+                    android:layout_marginTop="10dp"
+                    android:onClick="feesSelection"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+</ScrollView>

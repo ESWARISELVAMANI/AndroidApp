@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "news.TamilNewsPaper"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 21
+        versionName "21"
+        project.archivesBaseName = "Tamil News Newspaper"
+        multiDexEnabled true
+    }
+    buildTypes {
+        /*release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+        debug {
+            debuggable true
+
+
+        }
+    }
+}
+
+
+dependencies {
+
+    //App Rate
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'io.github.kobakei:ratethisapp:1.2.0'
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.facebook.android:audience-network-sdk:4.+'
+    implementation 'com.android.support:customtabs:27.1.1'
+
+    implementation 'com.inmobi.monetization:inmobi-ads:7.1.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.ads.mediation:inmobi:7.1.1.1'
+
+    //Remove after testing
+    /*implementation 'com.google.android.ads:mediation-test-suite:0.9.0'
+    implementation 'com.android.support:design:27.1.1'*/
+
+
+
+    /*implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.google.code.gson:gson:2.8.2'*/
+
+}
+
+apply plugin: 'com.google.gms.google-services'

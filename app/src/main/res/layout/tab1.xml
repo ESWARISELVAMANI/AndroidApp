@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:id="@+id/punjabi_news_layout">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/best_punjabi_news_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.2"
+        android:orientation="vertical">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            xmlns:grid="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/best_punjabi_news_newspaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="1"
+            tools:context="news.TamilNewsPaper.TopNewspaperWebViewActivity">
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/favourate_punjabi_newspaper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/favourate_menu_text"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:textSize="11dp" />
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/up_news_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.6">
+
+        <LinearLayout
+            android:id="@+id/all_punjabi_news_Newspapers_Scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                xmlns:grid="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/up_news_newspaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                tools:context="news.TamilNewsPaper.TopNewspaperWebViewActivity"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="Tamil Neewspapers"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/dinamalar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/dinamalar"
+                    android:clickable="true"
+                    android:hint="Dinamalar"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.dinamalar.com/, false,dinamalar"
+
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/daily_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/thanthi"
+                    android:clickable="true"
+                    android:hint="Thanthi"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="https://www.dailythanthi.com, true,thanthi"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/weekly_rasipalan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/hindu"
+                    android:clickable="true"
+                    android:hint="Tamil Hindu"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.tamil.thehindu.com/, false,hindu"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/dinamani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/dinamani"
+                    android:clickable="true"
+                    android:hint="dinamani"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.dinamani.com/, false,dinamani"
+
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/dinakaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/dinakaran"
+                    android:clickable="true"
+                    android:hint="dinakaran"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.dinakaran.com/, true,dinakaran"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/maalaimalar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/maalaimalar"
+                    android:clickable="true"
+                    android:hint="maalai malar"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.maalaimalar.com/, false,maalaimalar"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/oneindia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/oneindia"
+                    android:clickable="true"
+                    android:hint="oneindia tamil"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.oneindia.com, false,oneindia"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/bbc_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/bbc_tamil"
+                    android:clickable="true"
+                    android:hint="bbc tamil"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.bbc.com/tamil, true,bbc_tamil"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/google_news_Tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/google_news_tamil"
+                    android:clickable="true"
+                    android:hint="google news Tamil"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.maalaimalar.com/, false,google_news_Tamil"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="Movies and Entertainment"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/hotstar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/hotstar"
+                    android:clickable="true"
+                    android:hint="hotstar tamil"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.hotstar.com/channels/star-vijay, true,hotstar"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/webdunia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/webdunia"
+                    android:clickable="true"
+                    android:hint="webdunia"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.webdunia.com/, false,webdunia"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/filmi_beat_tamil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/filmi_beat_tamil"
+                    android:clickable="true"
+                    android:hint="filmi beat tamil"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.bbc.com/tamil, true,filmi_beat_tamil"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/tamil_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tamil_star"
+                    android:clickable="true"
+                    android:hint="tamil star"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.tamilstar.com/, false,tamil_star"
+
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/tamil_cinema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tamil_cinema"
+                    android:clickable="true"
+                    android:hint="tamil cinema"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamilcinema.news/, false,tamil_cinema"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/indiaglitz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/indiaglitz"
+                    android:clickable="true"
+                    android:hint="indiaglitz"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.indiaglitz.com/tamil, false,indiaglitz"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/behindwoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/behindwoods"
+                    android:clickable="true"
+                    android:hint="behindwoods"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://behindwoods.com/index.html, true,behindwoods"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/chennai_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/chennai_online"
+                    android:clickable="true"
+                    android:hint="chennai online"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://chennaionline.com/categories/cinema, false,chennai_online"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/dailymotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/dailymotion"
+                    android:clickable="true"
+                    android:hint="dailymotion"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.dailymotion.com/TamilMovies, false,dailymotion"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="Magazines"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <ImageButton
+                    android:id="@+id/vikatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/vikatan"
+                    android:clickable="true"
+                    android:hint="vikatan"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.vikatan.com/news/, true,vikatan"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/kungumam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/kungumam"
+                    android:clickable="true"
+                    android:hint="kungumam"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.kungumam.co.in/, false,kungumam"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/nakkeeran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/nakkeeran"
+                    android:clickable="true"
+                    android:hint="nakkeeran"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.dailyhunt.in/news/india/tamil/nakkheeran-epaper-nakkh, false,nakkeeran"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="TV News"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/thanthi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/thanthi_tv"
+                    android:clickable="true"
+                    android:hint="thanthi tv"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="https://m.youtube.com/user/thanthitv, true,thanthi_tv"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/puthiya_thalaimurai_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/puthiya_thalaimurai_tv"
+                    android:clickable="true"
+                    android:hint="puthiya thalaimurai tv"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.puthiyathalaimurai.com/live-tv, false,puthiya_thalaimurai_tv"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/sun_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/sun_news"
+                    android:clickable="true"
+                    android:hint="sun news"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="https://www.youtube.com/watch?v=u5373UpWIdo, false,sun_news"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="Business New"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/economic_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/economic_times"
+                    android:clickable="true"
+                    android:hint="economic times"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.economictimes.com/, true,economic_times"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/money_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/money_control"
+                    android:clickable="true"
+                    android:hint="money control"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.moneycontrol.com/, false,money_control"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/good_returns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/good_returns"
+                    android:clickable="true"
+                    android:hint="good_returns"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.goodreturns.in/, false,good_returns"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="English Newspapers"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/the_hindu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/the_hindu"
+                    android:clickable="true"
+                    android:hint="the hindu"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.thehindu.com/, true,the_hindu"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/toi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/toi"
+                    android:clickable="true"
+                    android:hint="toi"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://m.timesofindia.com/, false,toi"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/indian_express"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/indian_express"
+                    android:clickable="true"
+                    android:hint="indian express"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://indianexpress.com/, false,indian_express"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="Tamil Blogs and Websites"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/boldsky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/boldsky"
+                    android:clickable="true"
+                    android:hint="boldsky"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.boldsky.com/, true,boldsky"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/gizbot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/gizbot"
+                    android:clickable="true"
+                    android:hint="gizbot"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.gizbot.com/, false,gizbot"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/tour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/tour"
+                    android:clickable="true"
+                    android:hint="tour"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.nativeplanet.com/, false,tour"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_horizontal|center"
+                    android:text="Devotional Websites"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/rasi_palan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rasi_palan"
+                    android:clickable="true"
+                    android:hint="rasi_palan"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.maalaimalar.com/Devotional, true,rasi_palan"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/god_pictures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/god_pictures"
+                    android:clickable="true"
+                    android:hint="god_pictures"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://www.dailythanthi.com/Others/Devotional, false,god_pictures"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/temple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/temple"
+                    android:clickable="true"
+                    android:hint="temple"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://temple.dinamalar.com/, false,temple"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/samayam_spirutual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/samayam_spirutual"
+                    android:clickable="true"
+                    android:hint="samayam_spirutual"
+                    android:onClick="openUrlinChromeTabDirect"
+                    android:tag="http://tamil.samayam.com/spiritual-news/articlelist/45939389.cms, false,samayam_spirutual"
+
+                    />
+
+
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                xmlns:grid="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/fbAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="1"
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:id="@+id/big_banner_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" />
+            </GridLayout>
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                xmlns:grid="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rateusgridhindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                tools:context="news.TamilNewsPaper.TopNewspaperWebViewActivity"
+
+                >
+
+                <TextView
+                    android:id="@+id/rateushindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:hint="PLEASE RATE US"
+                    android:onClick="rateus"
+                    android:text="PLEASE RATE US"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textColorHighlight="@android:color/primary_text_dark"
+                    android:textSize="23dp" />
+
+                />
+
+            </GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentTop="false"
+        android:layout_above="@id/up_news_scroll"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        >
+    </com.google.android.gms.ads.AdView>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/appExit"
+        android:background="@drawable/splash"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        android:visibility="gone"/>
+</LinearLayout>
